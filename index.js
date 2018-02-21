@@ -34,6 +34,9 @@ searchForm.addEventListener('submit', (e) => {
           <h5 class="card-title">${post.title}</h5>
           <p class="card-text">${truncateText(post.selftext, 100)}</p>
           <a href="${post.url}" target="_blank" class="btn btn-primary">Read More</a>
+          <hr>
+          <span class="badge badge-secondary">Subreddit: ${post.subreddit}</span>
+          <span class="badge badge-dark">Score: ${post.score}</span>
           </div>
         </div>
         `;
